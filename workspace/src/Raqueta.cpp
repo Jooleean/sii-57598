@@ -20,5 +20,5 @@ Raqueta::~Raqueta()
 
 void Raqueta::Mueve(float t)
 {
-
+   //velocidad.y = 2;
 }

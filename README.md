@@ -42,3 +42,8 @@ Asignatura impartida por el **Departamento de Ingeniería Eléctrica, Electróni
 Este repositorio tiene finalidad exclusivamente docente.
 
 Si detectas algún error o tienes alguna sugerencia de mejora, puedes comunicarlo al profesorado de la asignatura.
+
+
+
+
+Práctica 1: Escribiendo esto desde editor ubuntu con gedit con gedit README.md
