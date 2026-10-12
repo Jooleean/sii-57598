@@ -18,6 +18,7 @@ public:
 	Esfera();
 	virtual ~Esfera();
 		
+	float r,g,b;	
 	Vector2D centro;
 	Vector2D velocidad;
 	float radio;

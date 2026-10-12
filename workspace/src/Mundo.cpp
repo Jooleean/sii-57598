@@ -166,30 +166,33 @@ void CMundo::Init()
 {
 	Plano p;
 //pared inferior
+//la asignación de color y vértices sería más compacta desde constructor o con estructura color = r,g,b
+        p.r=0.4; p.g=0.1; p.b=0.4;
 	p.x1=-7;p.y1=-5;
 	p.x2=7;p.y2=-5;
 	paredes.push_back(p);
 
 //superior
+        p.r=0.4; p.g=0.1; p.b=0.4;
 	p.x1=-7;p.y1=5;
 	p.x2=7;p.y2=5;
 	paredes.push_back(p);
 
-	fondo_izq.r=0;
+	fondo_izq.r=0.7; fondo_izq.g=0.1; fondo_izq.b=0.7;
 	fondo_izq.x1=-7;fondo_izq.y1=-5;
 	fondo_izq.x2=-7;fondo_izq.y2=5;
 
-	fondo_dcho.r=0;
+	fondo_dcho.r=0.7; fondo_dcho.g=0.1; fondo_dcho.b=0.7;
 	fondo_dcho.x1=7;fondo_dcho.y1=-5;
 	fondo_dcho.x2=7;fondo_dcho.y2=5;
 
 	//a la izq
-	jugador1.g=0;
+	jugador1.r=0.2; jugador1.g=0.1; jugador1.b=0.8;
 	jugador1.x1=-6;jugador1.y1=-1;
 	jugador1.x2=-6;jugador1.y2=1;
 
 	//a la dcha
-	jugador2.g=0;
+	jugador2.r=0.8; jugador2.g=0.1; jugador2.b=0.2;
 	jugador2.x1=6;jugador2.y1=-1;
 	jugador2.x2=6;jugador2.y2=1;
 }

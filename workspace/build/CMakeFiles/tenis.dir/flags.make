@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/sii/julian/sii-57598/workspace/include
+CXX_INCLUDES = -I/home/julian/57598/sii-57598/workspace/include
 
 CXX_FLAGS = 
 

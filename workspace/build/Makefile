@@ -57,18 +57,18 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sii/julian/sii-57598/workspace
+CMAKE_SOURCE_DIR = /home/julian/57598/sii-57598/workspace
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sii/julian/sii-57598/workspace/build
+CMAKE_BINARY_DIR = /home/julian/57598/sii-57598/workspace/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sii/julian/sii-57598/workspace/build/CMakeFiles /home/sii/julian/sii-57598/workspace/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/julian/57598/sii-57598/workspace/build/CMakeFiles /home/julian/57598/sii-57598/workspace/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sii/julian/sii-57598/workspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/julian/57598/sii-57598/workspace/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

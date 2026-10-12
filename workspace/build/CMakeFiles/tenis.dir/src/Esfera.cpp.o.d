@@ -1,8 +1,8 @@
 CMakeFiles/tenis.dir/src/Esfera.cpp.o: \
- /home/sii/julian/sii-57598/workspace/src/Esfera.cpp \
+ /home/julian/57598/sii-57598/workspace/src/Esfera.cpp \
  /usr/include/stdc-predef.h \
- /home/sii/julian/sii-57598/workspace/include/Esfera.h \
- /home/sii/julian/sii-57598/workspace/include/Vector2D.h \
+ /home/julian/57598/sii-57598/workspace/include/Esfera.h \
+ /home/julian/57598/sii-57598/workspace/include/Vector2D.h \
  /usr/include/c++/15/fstream /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
@@ -166,8 +166,9 @@ CMakeFiles/tenis.dir/src/Esfera.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
  /usr/include/c++/15/bits/fstream.tcc \
- /home/sii/julian/sii-57598/workspace/include/glut.h /usr/include/GL/gl.h \
- /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
+ /home/julian/57598/sii-57598/workspace/include/glut.h \
+ /usr/include/GL/gl.h /usr/include/GL/glext.h \
+ /usr/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h /usr/include/GL/glu.h

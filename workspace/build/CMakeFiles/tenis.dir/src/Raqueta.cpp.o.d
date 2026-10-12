@@ -1,10 +1,10 @@
 CMakeFiles/tenis.dir/src/Raqueta.cpp.o: \
- /home/sii/julian/sii-57598/workspace/src/Raqueta.cpp \
+ /home/julian/57598/sii-57598/workspace/src/Raqueta.cpp \
  /usr/include/stdc-predef.h \
- /home/sii/julian/sii-57598/workspace/include/Raqueta.h \
- /home/sii/julian/sii-57598/workspace/include/Plano.h \
- /home/sii/julian/sii-57598/workspace/include/Esfera.h \
- /home/sii/julian/sii-57598/workspace/include/Vector2D.h \
+ /home/julian/57598/sii-57598/workspace/include/Raqueta.h \
+ /home/julian/57598/sii-57598/workspace/include/Plano.h \
+ /home/julian/57598/sii-57598/workspace/include/Esfera.h \
+ /home/julian/57598/sii-57598/workspace/include/Vector2D.h \
  /usr/include/c++/15/fstream /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
