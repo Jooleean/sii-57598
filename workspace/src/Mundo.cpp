@@ -9,6 +9,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
+#include <fcntl.h>
+#include <stdio.h>
+#include <unistd.h>
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
@@ -21,7 +24,7 @@ CMundo::CMundo()
 
 CMundo::~CMundo()
 {
-
+	close(fd_logger);
 }
 
 void CMundo::InitGL()
@@ -128,6 +131,7 @@ void CMundo::OnTimer(int value)
 
 	jugador1.Rebota(esfera);
 	jugador2.Rebota(esfera);
+	
 	if(fondo_izq.Rebota(esfera))
 	{
 		esfera.centro.x=0;
@@ -135,6 +139,11 @@ void CMundo::OnTimer(int value)
 		esfera.velocidad.x=2+2*rand()/(float)RAND_MAX;
 		esfera.velocidad.y=2+2*rand()/(float)RAND_MAX;
 		puntos2++;
+		
+		std::string mensaje = "Jugador 2 marca punto \n    J1 (" + std::to_string(puntos1) + " - " + std::to_string(puntos2) + ") J2\n";
+		
+		write(fd_logger, mensaje.c_str(), mensaje.length());
+		
 	}
 
 	if(fondo_dcho.Rebota(esfera))
@@ -144,7 +153,22 @@ void CMundo::OnTimer(int value)
 		esfera.velocidad.x=-2-2*rand()/(float)RAND_MAX;
 		esfera.velocidad.y=-2-2*rand()/(float)RAND_MAX;
 		puntos1++;
+		
+		std::string mensaje = "Jugador 1 marca punto \n    J1 (" + std::to_string(puntos1) + " - " + std::to_string(puntos2) + ") J2\n";
+		
+		write(fd_logger, mensaje.c_str(), mensaje.length());
 	}
+	
+	if (puntos1 > 2 || puntos2 > 2) // comprueba si un jugador llega a 3 puntos
+	{
+		int ganador = puntos1>puntos2?1:2;
+		std::string mensaje = "\nGana Jugador " + std::to_string(ganador) + " por (" + std::to_string(puntos1) + " - " + std::to_string(puntos2) + ")\n";
+		write(fd_logger, mensaje.c_str(), mensaje.length());
+		
+		close(fd_logger);
+		exit(0);
+	}
+	
 
 }
 
@@ -164,6 +188,9 @@ void CMundo::OnKeyboardDown(unsigned char key, int x, int y)
 
 void CMundo::Init()
 {
+
+fd_logger = open("tuberia_logger", O_WRONLY);
+
 	Plano p;
 //pared inferior
 //la asignación de color y vértices sería más compacta desde constructor o con estructura color = r,g,b
