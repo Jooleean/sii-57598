@@ -12,3 +12,8 @@ Imagen de progreso para la primera práctica
 <img width="882" height="217" alt="Screenshot From 2026-10-12 20-04-29" src="https://github.com/user-attachments/assets/761da2fc-99eb-4034-8499-bb120fbb7940" />
 
 Otro aprendizaje: habiendo utilizado el PC del laboratorio, al continuar la práctica desde casa, se obtiene el error anterior. Esto sucede porque la generación con cmake quedó asociada a la ruta de directorios utilizada en la práctica, por lo que se debe borrar y hacer cmake de nuevo.
+
+PRÁCTICA 2:
+22/10/26 Habiendo completado la práctica 2, es posible jugar hasta alcanzarse 3 puntos por parte de un jugador, donde se cierran los ejecutables. Para cada punto se registra e imprime el jugador que anota y el resultado global en ese momento.
+
+<img width="342" height="301" alt="image" src="https://github.com/user-attachments/assets/a2a1e4fe-bd24-4720-a67b-7dda47ccba5f" />
